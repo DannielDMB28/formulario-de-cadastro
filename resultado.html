@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Resultado</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Dados recebidos</h1>
+        <p><strong>Nome:</strong> <span id="res-nome"></span></p>
+        <p><strong>Email:</strong> <span id="res-email"></span></p>
+        <p><strong>Ocupação:</strong> <span id="res-ocupacao"></span></p>
+        <p><strong>Receber novidades:</strong> <span id="res-novidades"></span></p>
+    </div>
+
+    <script>
+        // Recupera os dados do localStorage
+        document.getElementById("res-nome").textContent = localStorage.getItem("nome");
+        document.getElementById("res-email").textContent = localStorage.getItem("email");
+        document.getElementById("res-ocupacao").textContent = localStorage.getItem("ocupacao");
+        document.getElementById("res-novidades").textContent = localStorage.getItem("novidades");
+    </script>
+</body>
+</html>

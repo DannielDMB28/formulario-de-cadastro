@@ -8,38 +8,42 @@
 </head>
 <body>
     <div class="container">
-            <h1>Formulário</h1>
-            <form action="#">
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstname">Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome completo" required>
-                    </div>
+        <h1>Formulário</h1>
+        <form id="formulario">
 
-                    <div class="input-box">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
-                    </div>
+            <div class="input-box">
+                <label for="firstname">Nome</label>
+                <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome completo" required>
+            </div>
 
-                    <h3>Escolha a sua ocupação</h3>
-                    <select name="Estado" id="" class="input-box">
-                        <option value="sp">Escolher</option>
-                        <option value="sp">Estudante</option>
-                        <option value="mg">Júnior</option>
-                        <option value="rj">Outro</option>
-                    </select>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="input-box">
+                <label for="ocupacao">Escolha a sua ocupação</label>
+                <select id="ocupacao" name="ocupacao" required>
+                    <option value="">Selecione...</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="junior">Júnior</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="gender-group">
+                <div class="gender-input">
+                    <input type="checkbox" id="novidades" name="novidades">
+                    <label for="novidades">Quero receber novidades</label>
                 </div>
+            </div>
 
-                <div class="gender-group">
-                    <div class="gender-input">
-                        <input type="checkbox" name="checkbox"> Quero receber novidades
-                    </div>
-                </div>
-
-                <div class="continue-button">
-                    <button>Enviar formulário</button>
-                </div>
-            </form>
+            <div class="continue-button">
+                <button type="submit">Enviar formulário</button>
+            </div>
+        </form>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
